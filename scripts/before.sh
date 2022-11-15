@@ -1,9 +1,14 @@
 #!/bin/bash
 # Install node.js and PM2 globally
-sudo yum update
-sudo yum install nodejs
+sudo yum update -y
+sudo yum install -y gcc gcc-c++ make openssl-devel git
+sudo yum install -y gcc-c++ make
+curl -sL https://rpm.nodesource.com/setup_18.x | sudo -E bash - 
+sudo yum install -y nodejs
 node -v
-sudo npm install pm2 -g
+npm -v
+sudo npm install pm2@latest -g
+pm2 startup
 sudo rm -rf /home/ec2-user/my-app1
 
 
