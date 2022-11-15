@@ -8,9 +8,9 @@ sudo rm -rf /home/ec2-user/my-app1
 
 
 # Install Wordpress
-sudo yum update -y
-sudo amazon-linux-extras install -y php7.2
-sudo yum install -y httpd
-sudo systemctl start httpd
-sudo systemctl enable httpd
-sudo usermod -a -G apache ec2-user
+# sudo yum update -y
+# sudo amazon-linux-extras install -y php7.2
+# sudo yum install -y httpd
+# sudo systemctl start httpd
+# sudo systemctl enable httpd
+# sudo usermod -a -G apache ec2-user
