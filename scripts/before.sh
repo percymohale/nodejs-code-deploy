@@ -8,7 +8,7 @@ sudo yum install -y nodejs
 node -v
 npm -v
 sudo npm install pm2@latest -g
-pm2 startup
+sudo pm2 startup
 sudo rm -rf /home/ec2-user/my-app1
 
 
