@@ -1,7 +1,10 @@
 #!/bin/bash
 # Install node.js and PM2 globally
 sudo yum update
-sudo yum install nodejs npm --enablerepo=epel
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install --lts
+node -e "console.log('Running Node.js ' + process.version)"
 sudo yum install npm  -y
 sudo npm install pm2 -g
 sudo rm -rf /home/ec2-user/my-app1
