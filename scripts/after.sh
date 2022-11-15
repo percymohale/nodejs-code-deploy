@@ -1,4 +1,4 @@
 #!/bin/bash
-mkdir /home/ubuntu/my-app1
-cd /home/ubuntu/my-app1
+mkdir /home/ec2-user/my-app1
+cd /home/ec2-user/my-app1
 sudo npm install
