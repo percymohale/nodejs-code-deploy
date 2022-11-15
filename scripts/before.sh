@@ -1,12 +1,8 @@
 #!/bin/bash
 # Install node.js and PM2 globally
 sudo apt-get update
-sudo apt-get install curl
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
-sudo apt-get install nodejs
-sudo apt-get install npm  -y
 sudo npm install pm2 -g
-sudo rm -rf /home/ubuntu/my-app1
+sudo rm -rf /home/ec2-user/my-app1
 
 
 # Install Wordpress

@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/my-app1
+cd /home/ec2-user/my-app1
 sudo npm install
