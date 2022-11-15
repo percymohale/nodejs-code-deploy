@@ -3,7 +3,8 @@
 sudo apt-get update
 sudo npm install pm2 -g
 sudo rm -rf /home/ec2-user/my-app1
-
+pm2 stop all
+pm2 start /home/ec2-user/my-app1/app/index.js
 
 # Install Wordpress
 # sudo apt-get update -y
